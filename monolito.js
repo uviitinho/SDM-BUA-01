@@ -14,6 +14,12 @@ app.post("/usuarios", (req, res) => {
     res.send({message: "Usuario cadastrado com sucesso", usuario})
 })
 
+app.post("/pedidos", (req, res) => {
+    const usuario = req.body;
+    pedidos.push(pedido)
+    res.send({message: "Pedido Criado", pedido})
+})
+
 app.get("/dados", (req, res) =>{
     res.send({usuarios})
 })
